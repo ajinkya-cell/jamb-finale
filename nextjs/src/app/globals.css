@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-serif: var(--font-primary), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Jamb palette (sampled from jamb.co.uk) */
+  --color-foreground: hsl(240 10% 3.9%);
+  --color-linen: #f3f0ed;
+  --color-stone: #e3e3e3;
+  --color-taupe: #dfdad7;
+  --color-ash: #9c9c9d;
+  --color-slate: #757575;
+  --color-graphite: #5c5c5c;
+
+  --spacing-navbar: 90px;
+  --spacing-navbar-scrolled: 65px;
+}
+
+/* Jamb's container: full width, 2rem gutters, capped at 1920px. */
+@utility page-container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  max-width: 1920px;
+}
+
+/* Vertical rhythm shared by page-builder sections. */
+@utility py-pagebuilder {
+  padding-block: 4rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #fff;
+    color: var(--color-foreground);
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+}

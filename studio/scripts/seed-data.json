@@ -1,0 +1,1379 @@
+{
+ "settings": {
+  "siteTitle": "Antique Fireplaces & Antique Reproduction Fireplaces | Jamb",
+  "siteDescription": "Antique fireplaces & reproduction fireplaces. Explore our range of the finest & quality antiques inc. fire grates, reproduction antique lighting & more.",
+  "logo": "image-ec8dce0609295294b96bbba70afcc8a174ef8161-108x45-svg"
+ },
+ "sections": [
+  {
+   "type": "hero",
+   "tone": "warm",
+   "image": {
+    "id": "image-0c38422fbbd2fc15ae7d06dbccfdb20f91a9d209-8192x4838-jpg",
+    "crop": {
+     "bottom": 0.18604588054031557,
+     "left": 0.2615389331443536,
+     "right": 0.23894802288216244,
+     "top": 0.27991343035436256
+    },
+    "hotspot": {
+     "x": 0.5123988503098768,
+     "y": 0.6553418301305474
+    }
+   },
+   "links": [
+    {
+     "label": "Fireplaces",
+     "href": "/fireplaces"
+    },
+    {
+     "label": "Lighting",
+     "href": "/lighting"
+    },
+    {
+     "label": "Furniture",
+     "href": "/furniture"
+    },
+    {
+     "label": "Antiques",
+     "href": "/furniture/antiques"
+    }
+   ]
+  },
+  {
+   "type": "feature",
+   "tone": "warm",
+   "eyebrow": "ANTIQUE & REPRODUCTION",
+   "title": "Fireplaces",
+   "body": [
+    "Jamb’s comprehensive inventory of antique fireplaces spans the 17th-century and beyond, recalling the names of Britain’s finest architects: Inigo Jones, Robert Adam and Sir John Soane. These important chimneypieces have inspired Jamb’s collection of reproduction fireplaces in the finest English stone and Italian marble. In the south London workshop, a team of Jamb specialists design to order and hand-finish fireplaces with an unparalleled level of historical accuracy to ensure each one fits seamlessly into any environment."
+   ],
+   "image": {
+    "id": "image-cbab7e24fd14ca6e0e56a29cde40cc195343085b-1309x1500-png"
+   },
+   "imagePosition": "right",
+   "actions": [
+    {
+     "label": "Explore our Fireplaces",
+     "href": "/fireplaces"
+    },
+    {
+     "label": "Explore our Antique Chimneypieces",
+     "href": "/fireplaces/antique-chimneypieces"
+    },
+    {
+     "label": "Sell an Antique Fireplace",
+     "href": "/sell-an-antique-chimneypiece"
+    }
+   ]
+  },
+  {
+   "type": "rail",
+   "tone": "grey",
+   "title": "Our latest chimneypieces",
+   "titleLink": null,
+   "display": "carousel",
+   "products": [
+    {
+     "name": "Ailesbury",
+     "path": "/fireplaces/reproduction-fireplaces/marble/ailesbury-in-white-marble",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-fa147ff66ff8f2fa41e779e9ac1ff6e7cb35058a-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "G528",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g528",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-8d4f67c0f406e9853a399fec1d146f7dc3e90b7d-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Giles",
+     "path": "/fireplaces/reproduction-fireplaces/stone/giles",
+     "category": "/fireplaces/reproduction-fireplaces/stone",
+     "categoryName": "Stone",
+     "image": {
+      "id": "image-b219172372e7b971b597b11f63185a4adcaca8fd-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "Chambers",
+     "path": "/fireplaces/reproduction-fireplaces/marble/chambers-bardiglio",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-50d4dbb3296499ca85acf9394dd66e8fc75eb54e-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "I254",
+     "path": "/fireplaces/antique-chimneypieces/french-italian/i254",
+     "category": "/fireplaces/antique-chimneypieces/french-italian",
+     "categoryName": "French & Italian",
+     "image": {
+      "id": "image-475a09194d26b6688088b0a02f7510521db85700-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Emilia",
+     "path": "/fireplaces/reproduction-fireplaces/marble/emilia",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-b5a0e44646809e0adf87e9d5a1c7dc6b5eaedcf7-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "Bunny",
+     "path": "/fireplaces/reproduction-fireplaces/stone/bunny-painswick-stone",
+     "category": "/fireplaces/reproduction-fireplaces/stone",
+     "categoryName": "Stone",
+     "image": {
+      "id": "image-37b30260192c9a448337395b301c3d4597daf431-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "N210",
+     "path": "/fireplaces/antique-chimneypieces/regency/n210",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-3c7400cf347bde39786be91adfbdaa3c04b0c58b-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "I016",
+     "path": "/fireplaces/antique-chimneypieces/french-italian/i016-i16",
+     "category": "/fireplaces/antique-chimneypieces/french-italian",
+     "categoryName": "French & Italian",
+     "image": {
+      "id": "image-24956ea531d4145865f32f32965a5197af433fa7-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Pembroke",
+     "path": "/fireplaces/reproduction-fireplaces/marble/pembroke-seravezza",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-04cce794f87ae67ac65ca7a5783f5f4ef473cd45-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "Knowsley",
+     "path": "/fireplaces/reproduction-fireplaces/stone/knowsley",
+     "category": "/fireplaces/reproduction-fireplaces/stone",
+     "categoryName": "Stone",
+     "image": {
+      "id": "image-b72fb7fca1f8b7db7feb470e0c43cdef7f87dd1b-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "N483",
+     "path": "/fireplaces/antique-chimneypieces/regency/n483",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-da658b9eacad960c8cefcd8bd781a06280fd472a-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Roxburghe",
+     "path": "/fireplaces/reproduction-fireplaces/marble/roxburghe-breccia-stazzema",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-a8b4009c3a246ec5375c1fb5715d9dbe08bc4836-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "G533",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g533",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-d4a3ec1ee766a7450f18eae65e4339aafe651d39-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Baird Portland Stone",
+     "path": "/fireplaces/reproduction-fireplaces/stone/baird-portland-stone",
+     "category": "/fireplaces/reproduction-fireplaces/stone",
+     "categoryName": "Stone",
+     "image": {
+      "id": "image-a7bcce5d8864932b8c2a513213154945e2627acf-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "N488",
+     "path": "/fireplaces/antique-chimneypieces/regency/n488",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-9a7fa85dbcb4a1d12837cb3b92c47fa74eaf128e-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "G535",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g535",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-dfd279c29fccdcaf00161b341ecefada6d1f1c92-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "N327",
+     "path": "/fireplaces/antique-chimneypieces/regency/n327",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-2c963b07a74bac26582f2153c603ccbcc2e0cd3f-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "G531",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g531",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-0a7bb4254c494beb05d77c3609c53e46567b299d-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "Algernon",
+     "path": "/fireplaces/reproduction-fireplaces/marble/algernon-grigio-carnico",
+     "category": "/fireplaces/reproduction-fireplaces/marble",
+     "categoryName": "Marble",
+     "image": {
+      "id": "image-ed591dc9e306962623fabf22af4f54391b8626c2-5004x3665-jpg"
+     }
+    },
+    {
+     "name": "N433",
+     "path": "/fireplaces/antique-chimneypieces/regency/n433",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-491f0fbac0a348a1a98791c77220c0037820ba55-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "N486",
+     "path": "/fireplaces/antique-chimneypieces/regency/n486",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-c918682c3ca99cbcd0598722965f5d832bedee72-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "G536",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g536",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-b3278377c32a57a688589aac3f4f530f26887595-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "N480",
+     "path": "/fireplaces/antique-chimneypieces/regency/n480",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-4be25bc06c32cfdfa35aea252e0b0693af0bf6c5-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "N487",
+     "path": "/fireplaces/antique-chimneypieces/regency/n487",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-e5cf0a73329b960ececcdb836f0edf6844bb8104-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "G529",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g529",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-9f84fc85190df35c78ebfd4da3978dabf04fb1c1-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "G522",
+     "path": "/fireplaces/antique-chimneypieces/georgian/g522",
+     "category": "/fireplaces/antique-chimneypieces/georgian",
+     "categoryName": "Georgian",
+     "image": {
+      "id": "image-74c0eaa1cad4ae51f4baf792319b40fd54da61f0-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "I073",
+     "path": "/fireplaces/antique-chimneypieces/french-italian/i073",
+     "category": "/fireplaces/antique-chimneypieces/french-italian",
+     "categoryName": "French & Italian",
+     "image": {
+      "id": "image-863a6f39dd18e39eac6b23a7c599f91fb7cdc772-4702x3445-jpg"
+     }
+    },
+    {
+     "name": "N484",
+     "path": "/fireplaces/antique-chimneypieces/regency/n484",
+     "category": "/fireplaces/antique-chimneypieces/regency",
+     "categoryName": "Regency",
+     "image": {
+      "id": "image-245d6949332e2c5ab90ffdff9186c456e7ae2530-4702x3445-jpg"
+     }
+    }
+   ]
+  },
+  {
+   "type": "feature",
+   "tone": "warm",
+   "eyebrow": null,
+   "title": "Lighting",
+   "body": [
+    "Over the past 20 years, since the Original Globe was meticulously reinvented from an antique dating from the 1830s, Jamb has developed a long lineage of lighting, including the iconic hanging globes, lanterns, wall lights, dish lights and more. With bespoke scalability and a wealth of hand-finishes, each light is a symbol of exquisite workmanship, attention to detail and rich historic referencing."
+   ],
+   "image": {
+    "id": "image-143b3424dbae1692fd4253ef99373440de163a23-2142x2858-jpg"
+   },
+   "imagePosition": "right",
+   "actions": [
+    {
+     "label": "Explore our Lighting",
+     "href": "/lighting"
+    }
+   ]
+  },
+  {
+   "type": "rail",
+   "tone": "grey",
+   "title": "Our latest lighting",
+   "titleLink": null,
+   "display": "carousel",
+   "products": [
+    {
+     "name": "Grand Sackville",
+     "path": "/lighting/hanging-lanterns/grand-sackville",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-6a712d93aabaf76e753a32a9f2b4f321aee58c0b-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Luscombe",
+     "path": "/lighting/hanging-lanterns/luscombe",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-6b4464b45385aec13249c6e82e8a46444b80a148-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Esme",
+     "path": "/lighting/wall-lanterns/esme",
+     "category": "/lighting/wall-lanterns",
+     "categoryName": "Wall Lanterns",
+     "image": {
+      "id": "image-f3ecb78aecb9bdabff9d76c3c9ab7c1cfe991679-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Small Langtry",
+     "path": "/lighting/hanging-lanterns/small-langtry",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-d626a8a93254ccc87d59b496241d0aa985772d15-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Ingrid",
+     "path": "/lighting/wall-lanterns/ingrid",
+     "category": "/lighting/wall-lanterns",
+     "categoryName": "Wall Lanterns",
+     "image": {
+      "id": "image-025044c49abacc1fad0cc732d31c6c48626cd8d4-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Small Ruskin",
+     "path": "/lighting/hanging-lanterns/small-ruskin",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-bc73aca0ae46b51c0edde7f297abf2e881270b16-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Hazel",
+     "path": "/lighting/hanging-globes/hazel",
+     "category": "/lighting/hanging-globes",
+     "categoryName": "Hanging Globes",
+     "image": {
+      "id": "image-1a41a054da5640cb4fcf9217010b6690fa6b7af0-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Whitmore",
+     "path": "/lighting/hanging-lanterns/whitmore",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-e833461ad4647ce9ee47e02fc9b9cf23d98065ea-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Ines Plain",
+     "path": "/lighting/hanging-lanterns/ines-plain",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-2a77e9ee80681eed85beac7a2a1fed0d770317a5-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Ines Fluted",
+     "path": "/lighting/hanging-lanterns/ines-fluted",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-83fc68cb3ac5eaf59868133dfd0fb1365b699744-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Leopold",
+     "path": "/lighting/hanging-lanterns/leopold",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-5d851d1ffa940e1fbf0d37cbac1e2018b43134dd-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Mulgrave",
+     "path": "/lighting/hanging-lanterns/mulgrave",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-d5807e762b75e12f0d85f28b8842ae5067fc11ac-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Errol Candle",
+     "path": "/lighting/hanbury-lights/errol-candle",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-c9613912f03eb3f1a9ab2727d876bda181b7dec4-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Errol Dish Fluted Alabaster",
+     "path": "/lighting/hanbury-lights/errol-dish-fluted-alabaster",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-f445f84f1dfd7f61fa63dce2fec664f8e408b3dc-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Errol Globe Plain Alabaster",
+     "path": "/lighting/hanbury-lights/errol-globe-plain-alabaster",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-15f43bf6b28494833a9c1f960b9f264f3da8734e-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Errol Dish Plain Alabaster",
+     "path": "/lighting/hanbury-lights/errol-dish-plain-alabaster",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-a3f8167571bb3051aad1db537b13a62d5f88fcea-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Errol Globe Fluted Alabaster",
+     "path": "/lighting/hanbury-lights/errol-globe-fluted-alabaster",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-25d3061e9efc3b91d9638dec9dfc359de32489b7-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Small Bridgens",
+     "path": "/lighting/hanging-lanterns/small-bridgens",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-aaae25c0415e51b29e5e55c55438541435feb6ee-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Large Bettina Alabaster",
+     "path": "/lighting/alabaster-lights/large-bettina-alabaster",
+     "category": "/lighting/alabaster-lights",
+     "categoryName": "Alabaster Lights",
+     "image": {
+      "id": "image-380035231bf6d14a884f29eb45a8b35cc36e9ee7-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Large Atlas Alabaster",
+     "path": "/lighting/alabaster-lights/large-atlas-alabaster",
+     "category": "/lighting/alabaster-lights",
+     "categoryName": "Alabaster Lights",
+     "image": {
+      "id": "image-44b07869ff64c2591163e501dd0ebd5e5ce6436f-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Ernest",
+     "path": "/lighting/hanging-lanterns/ernest",
+     "category": "/lighting/hanging-lanterns",
+     "categoryName": "Hanging Lanterns",
+     "image": {
+      "id": "image-5af914682edcd7d2d5fa6525f4d66cc073b48fcc-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Bettina Alabaster",
+     "path": "/lighting/alabaster-lights/bettina-alabaster",
+     "category": "/lighting/alabaster-lights",
+     "categoryName": "Alabaster Lights",
+     "image": {
+      "id": "image-520624fb779e46c5caa3b82c45dddcc257fd2291-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Waterlily",
+     "path": "/lighting/surface-lights/waterlily",
+     "category": "/lighting/surface-lights",
+     "categoryName": "Surface Lights",
+     "image": {
+      "id": "image-596fffb97d328e5bc60f99a88ea730b8c2ec221e-1988x1596-jpg"
+     }
+    },
+    {
+     "name": "Ada",
+     "path": "/lighting/hanbury-lights/ada",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-561fb1d1a444d8bce517e3c6fb57cac31a024e0b-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Grand Batsford",
+     "path": "/lighting/dish-lights/grand-batsford",
+     "category": "/lighting/dish-lights",
+     "categoryName": "Dish Lights",
+     "image": {
+      "id": "image-7efc6e03fceac59bdd1dd4e43a277bf594f6ef8f-1988x2706-jpg"
+     }
+    }
+   ]
+  },
+  {
+   "type": "rail",
+   "tone": "grey",
+   "title": "Our Hanbury wall lights",
+   "titleLink": null,
+   "display": "carousel",
+   "products": [
+    {
+     "name": "Elsie Drop",
+     "path": "/lighting/hanbury-lights/elsie-drop",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-31694a49ac25cf8ecadf58a9dd6358ace321a142-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Elsie Candle",
+     "path": "/lighting/hanbury-lights/elsie-candle",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-c005397ce979f10abaec74e85666456927ff66de-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Elsie Grand Sconce",
+     "path": "/lighting/hanbury-lights/elsie-grand-sconce",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-92730545556d0efd2e6f10b18fe71c3f52d31255-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Elsie Double Sconce Wide",
+     "path": "/lighting/hanbury-lights/elsie-double-sconce-wide",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-d58050b09e59b919b8672c35c4e96631361ebb3d-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Elsie Double Sconce",
+     "path": "/lighting/hanbury-lights/elsie-double-sconce",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-f0d72517bb3f9e0ae2b494d9ef436806774349ff-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Elsie Sconce",
+     "path": "/lighting/hanbury-lights/elsie-sconce",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-343a6bf9f1688ba4d8209add9ce4444ddab1e762-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Walter Enamel",
+     "path": "/lighting/hanbury-lights/walter-enamel",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-9f5129ac5d2ba6eec77d38ca5e767a5a4cc6f79c-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Walter French Candle",
+     "path": "/lighting/hanbury-lights/walter-french-candle",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-e270d8d1faf94d3488714f24a57e06727a78703a-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Walter Drop",
+     "path": "/lighting/hanbury-lights/walter-drop",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-d673f03b7a92b44eafa3e80f43092f4a6abb3b4a-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Conroy",
+     "path": "/lighting/hanbury-lights/conroy",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-aabb3060199445e83ce5593dd74c9e59cca3d1b7-1103x1500-jpg"
+     }
+    },
+    {
+     "name": "Lotus (Clear Glass)",
+     "path": "/lighting/wall-lanterns/lotus-clear-glass",
+     "category": "/lighting/wall-lanterns",
+     "categoryName": "Wall Lanterns",
+     "image": {
+      "id": "image-461fc8124bde41d07ad5daf57c027f5a70c59f01-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Walter (Glass Coolie Shade)",
+     "path": "/lighting/hanbury-lights/walter-glass-coolie-shade",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-35527be9ab8e8e93e96c5282cd679ad8fa362587-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Long Stem Brooke",
+     "path": "/lighting/hanbury-lights/long-stem-brooke",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-124af6df9623271cfa6aeaac1ef158c2acc8b0ad-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Louis",
+     "path": "/lighting/hanbury-lights/louis",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-7387f8ffb77bb53d15b75a2f2d1754b6befce6c3-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Bertram",
+     "path": "/lighting/hanbury-lights/bertram",
+     "category": "/lighting/hanbury-lights",
+     "categoryName": "Hanbury Lights",
+     "image": {
+      "id": "image-660b118ebca497b305a011e72b171814439b5c85-1988x2706-jpg"
+     }
+    }
+   ]
+  },
+  {
+   "type": "feature",
+   "tone": "warm",
+   "eyebrow": "ANTIQUE & REPRODUCTION",
+   "title": "Furniture",
+   "body": [
+    "Jamb prides itself on one of the most extensive and eclectic collections of antique and loyally reproduced furniture, each piece celebrated as much for its look and feel as for its roots and soul. The Jamb aesthetic aligns with the English and Irish country house style with steadfast devotion to quality of craftsmanship and design."
+   ],
+   "image": {
+    "id": "image-342b27a6f9a6deba6c9af4130ea5964368aa9ef1-2142x2858-jpg"
+   },
+   "imagePosition": "right",
+   "actions": [
+    {
+     "label": "Explore our Antique Furniture",
+     "href": "/furniture/antiques"
+    },
+    {
+     "label": "Explore our Reproduction Furniture",
+     "href": "/furniture/reproduction-furniture"
+    }
+   ]
+  },
+  {
+   "type": "rail",
+   "tone": "grey",
+   "title": "Our latest furniture",
+   "titleLink": "/furniture",
+   "display": "carousel",
+   "products": [
+    {
+     "name": "Daphne",
+     "path": "/furniture/reproduction-furniture/seating/chairs/daphne",
+     "category": "/furniture/reproduction-furniture/seating/chairs",
+     "categoryName": "Chairs",
+     "image": {
+      "id": "image-76782dfb8c0cfbe1a199ce69dc4843d65cee4451-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Nell",
+     "path": "/furniture/reproduction-furniture/seating/benches/nell",
+     "category": "/furniture/reproduction-furniture/seating/benches",
+     "categoryName": "Benches",
+     "image": {
+      "id": "image-a6e8d06e64b9b4a298b2d4d207486f23f562dada-1988x2706-jpg",
+      "crop": {
+       "bottom": 0,
+       "left": 0,
+       "right": 0,
+       "top": 0
+      },
+      "hotspot": {
+       "x": 0.5,
+       "y": 0.5
+      }
+     }
+    },
+    {
+     "name": "Josephine Ottoman",
+     "path": "/furniture/reproduction-furniture/seating/sofas/josephine-ottoman",
+     "category": "/furniture/reproduction-furniture/seating/sofas",
+     "categoryName": "Sofas",
+     "image": {
+      "id": "image-f4a4be89fb8e4375c9420c51eb12b9f4f0f54cd3-2706x1988-jpg"
+     }
+    },
+    {
+     "name": "Kitty",
+     "path": "/furniture/reproduction-furniture/seating/chairs/kitty",
+     "category": "/furniture/reproduction-furniture/seating/chairs",
+     "categoryName": "Chairs",
+     "image": {
+      "id": "image-3cc9214496f8d2a4e1b977e708b551ae04fe9640-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Palmira",
+     "path": "/furniture/reproduction-furniture/beds/palmira",
+     "category": "/furniture/reproduction-furniture/beds",
+     "categoryName": "Four Poster Beds",
+     "image": {
+      "id": "image-13e54a2ee8fa684823e4e49bf37b1101338970af-1988x2706-jpg"
+     }
+    },
+    {
+     "name": "Crawford",
+     "path": "/furniture/reproduction-furniture/seating/sofas/crawford",
+     "category": "/furniture/reproduction-furniture/seating/sofas",
+     "categoryName": "Sofas",
+     "image": {
+      "id": "image-0457cc303137cb9ef648af62a9aa005ffb165f93-2706x1988-jpg"
+     }
+    },
+    {
+     "name": "Stripped Pine Belton",
+     "path": "/furniture/reproduction-furniture/tables/stripped-pine-belton",
+     "category": "/furniture/reproduction-furniture/tables",
+     "categoryName": "Tables",
+     "image": {
+      "id": "image-906b4870f0739309e287ef66b18dfda80e302599-2706x1988-jpg"
+     }
+    },
+    {
+     "name": "Ottoline",
+     "path": "/furniture/reproduction-furniture/mirrors/ottoline",
+     "category": "/furniture/reproduction-furniture/mirrors",
+     "categoryName": "Mirrors",
+     "image": {
+      "id": "image-8929cd3647626b61c06e18088aa6115ddd36fc85-1988x2706-jpg"
+     }
+    }
+   ]
+  },
+  {
+   "type": "video",
+   "tone": "warm",
+   "url": "https://youtube.com/shorts/_aDs-BrKQU8"
+  },
+  {
+   "type": "feature",
+   "tone": "taupe",
+   "eyebrow": "Journal",
+   "title": "No.4",
+   "body": [
+    "Jamb Journal IV is a collection of stories capturing our work over the past two years, alongside reflections on our beginnings, with a focus on our antique and reproduction collections and the inspirations behind them."
+   ],
+   "image": {
+    "id": "image-ef5b673d4f5744c60a882e76ce23e119db2c0abe-1562x2122-png"
+   },
+   "imagePosition": "right",
+   "actions": [
+    {
+     "label": "Read more",
+     "href": "/journal"
+    },
+    {
+     "label": "Purchase Journal IV",
+     "href": "/shop/jamb-journal/jamb-journal-iv"
+    }
+   ]
+  }
+ ],
+ "navigation": [
+  {
+   "label": "Fireplaces",
+   "href": "/fireplaces",
+   "columns": [
+    {
+     "heading": "Reproduction Fireplaces",
+     "headingHref": "/fireplaces/reproduction-fireplaces",
+     "links": [
+      {
+       "label": "Marble",
+       "href": "/fireplaces/reproduction-fireplaces/marble"
+      },
+      {
+       "label": "Stone",
+       "href": "/fireplaces/reproduction-fireplaces/stone"
+      },
+      {
+       "label": "Grates & Accessories",
+       "href": "/fireplaces/reproduction-fireplaces/grates-accessories"
+      }
+     ]
+    },
+    {
+     "heading": "Antique Chimneypieces",
+     "headingHref": "/fireplaces/antique-chimneypieces",
+     "links": [
+      {
+       "label": "Georgian",
+       "href": "/fireplaces/antique-chimneypieces/georgian"
+      },
+      {
+       "label": "French & Italian",
+       "href": "/fireplaces/antique-chimneypieces/french-italian"
+      },
+      {
+       "label": "Regency",
+       "href": "/fireplaces/antique-chimneypieces/regency"
+      },
+      {
+       "label": "Fire Grates",
+       "href": "/fireplaces/antique-chimneypieces/fire-grates-and-accessories"
+      },
+      {
+       "label": "Sell an Antique Chimneypiece",
+       "href": "/sell-an-antique-chimneypiece"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Lighting",
+   "href": "/lighting",
+   "columns": [
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Hanging Globes",
+       "href": "/lighting/hanging-globes"
+      },
+      {
+       "label": "Hanging Lanterns",
+       "href": "/lighting/hanging-lanterns"
+      },
+      {
+       "label": "Wall Lanterns",
+       "href": "/lighting/wall-lanterns"
+      },
+      {
+       "label": "Hanbury Lights",
+       "href": "/lighting/hanbury-lights"
+      },
+      {
+       "label": "Dish Lights",
+       "href": "/lighting/dish-lights"
+      }
+     ]
+    },
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Surface Lights",
+       "href": "/lighting/surface-lights"
+      },
+      {
+       "label": "Alabaster Lights",
+       "href": "/lighting/alabaster-lights"
+      },
+      {
+       "label": "Lamps",
+       "href": "/lighting/lamps"
+      },
+      {
+       "label": "Lamp Shades",
+       "href": "/lighting/lampshades"
+      },
+      {
+       "label": "Finishes",
+       "href": "/lighting/finishes"
+      },
+      {
+       "label": "Chain & Brackets",
+       "href": "/lighting/chains-brackets"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Furniture",
+   "href": "/furniture",
+   "columns": [
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Sofas",
+       "href": "/furniture/reproduction-furniture/seating/sofas"
+      },
+      {
+       "label": "Chairs",
+       "href": "/furniture/reproduction-furniture/seating/chairs"
+      },
+      {
+       "label": "Benches",
+       "href": "/furniture/reproduction-furniture/seating/benches"
+      },
+      {
+       "label": "Stools",
+       "href": "/furniture/reproduction-furniture/seating/stools"
+      },
+      {
+       "label": "Tables",
+       "href": "/furniture/reproduction-furniture/tables"
+      }
+     ]
+    },
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Mirrors",
+       "href": "/furniture/reproduction-furniture/mirrors"
+      },
+      {
+       "label": "Beds",
+       "href": "/furniture/reproduction-furniture/beds"
+      },
+      {
+       "label": "Pantry Collection",
+       "href": "/furniture/reproduction-furniture/the-pantry-collection"
+      },
+      {
+       "label": "Accessories",
+       "href": "/furniture/reproduction-furniture/accessories"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Antiques",
+   "href": "/furniture/antiques",
+   "columns": [
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Mirrors",
+       "href": "/furniture/antiques/antique-mirrors"
+      },
+      {
+       "label": "Seating",
+       "href": "/furniture/antiques/antique-seating"
+      },
+      {
+       "label": "Tables",
+       "href": "/furniture/antiques/antique-tables"
+      },
+      {
+       "label": "Desks",
+       "href": "/furniture/antiques/desks"
+      },
+      {
+       "label": "Bookcases & Cabinets",
+       "href": "/furniture/antiques/bookcases-and-cabinets"
+      },
+      {
+       "label": "Chests",
+       "href": "/furniture/antiques/chests"
+      }
+     ]
+    },
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Carpets",
+       "href": "/furniture/antiques/antique-carpets"
+      },
+      {
+       "label": "Objects",
+       "href": "/furniture/antiques/objects"
+      },
+      {
+       "label": "Works of Art",
+       "href": "/furniture/antiques/works-of-art"
+      },
+      {
+       "label": "Garden Statuary",
+       "href": "/furniture/antiques/garden-statuary"
+      },
+      {
+       "label": "View Entire Collection",
+       "href": "/see-all/antiques"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Shop",
+   "href": null,
+   "columns": [
+    {
+     "heading": null,
+     "headingHref": null,
+     "links": [
+      {
+       "label": "Jamb Journal IV",
+       "href": "/shop/jamb-journal/jamb-journal-iv"
+      },
+      {
+       "label": "Scipio Candlestick",
+       "href": "/shop/candles-and-candlesticks/scipio-candlestick"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "footer": {
+  "phone": "+44 (0) 207 730 2122",
+  "address": "95–97 Pimlico Rd\nLondon SW1W 8PH",
+  "email": "info@jamb.co.uk",
+  "social": [
+   {
+    "platform": "instagram",
+    "url": "https://www.instagram.com/jamb_london/"
+   },
+   {
+    "platform": "youtube",
+    "url": "https://www.youtube.com/@jamb_london"
+   },
+   {
+    "platform": "pinterest",
+    "url": "https://uk.pinterest.com/jamblondon/"
+   },
+   {
+    "platform": "vimeo",
+    "url": "https://vimeo.com/jamblondon"
+   }
+  ],
+  "newsletter": {
+   "heading": "Newsletter",
+   "body": "Sign up to receive Jamb’s curated newsletter detailing the latest acquisitions, product designs and news from our collections.",
+   "buttonLabel": "Subscribe"
+  },
+  "columns": [
+   [
+    {
+     "heading": "Reproduction Fireplaces",
+     "headingHref": "/fireplaces/reproduction-fireplaces",
+     "links": [
+      {
+       "label": "Marble",
+       "href": "/fireplaces/reproduction-fireplaces/marble"
+      },
+      {
+       "label": "Stone",
+       "href": "/fireplaces/reproduction-fireplaces/stone"
+      },
+      {
+       "label": "Grates & Accessories",
+       "href": "/fireplaces/reproduction-fireplaces/grates-accessories"
+      }
+     ]
+    },
+    {
+     "heading": "Antique Chimneypieces",
+     "headingHref": "/fireplaces/antique-chimneypieces",
+     "links": [
+      {
+       "label": "Georgian",
+       "href": "/fireplaces/antique-chimneypieces/georgian"
+      },
+      {
+       "label": "Regency",
+       "href": "/fireplaces/antique-chimneypieces/regency"
+      },
+      {
+       "label": "French & Italian",
+       "href": "/fireplaces/antique-chimneypieces/french-italian"
+      },
+      {
+       "label": "Sell an Antique Chimneypiece",
+       "href": "/sell-an-antique-chimneypiece"
+      }
+     ]
+    }
+   ],
+   [
+    {
+     "heading": "Lighting",
+     "headingHref": "/lighting",
+     "links": [
+      {
+       "label": "Hanging Globes",
+       "href": "/lighting/hanging-globes"
+      },
+      {
+       "label": "Hanging Lanterns",
+       "href": "/lighting/hanging-lanterns"
+      },
+      {
+       "label": "Wall Lanterns",
+       "href": "/lighting/wall-lanterns"
+      },
+      {
+       "label": "Wall Lights",
+       "href": "/lighting/wall-lanterns"
+      },
+      {
+       "label": "Dish Lights",
+       "href": "/lighting/dish-lights"
+      },
+      {
+       "label": "Surface Lights",
+       "href": "/lighting/surface-lights"
+      },
+      {
+       "label": "Lamps",
+       "href": "/lighting/lamps"
+      },
+      {
+       "label": "Lamp Shades",
+       "href": "/lighting/lampshades"
+      },
+      {
+       "label": "Chains & Brackets",
+       "href": "/lighting/chains-brackets"
+      },
+      {
+       "label": "Finishes",
+       "href": "/lighting/finishes"
+      }
+     ]
+    }
+   ],
+   [
+    {
+     "heading": "Furniture",
+     "headingHref": "/furniture/reproduction-furniture",
+     "links": [
+      {
+       "label": "Sofas",
+       "href": "/furniture/reproduction-furniture/seating/sofas"
+      },
+      {
+       "label": "Chairs",
+       "href": "/furniture/reproduction-furniture/seating/chairs"
+      },
+      {
+       "label": "Stools",
+       "href": "/furniture/reproduction-furniture/seating/stools"
+      },
+      {
+       "label": "Benches",
+       "href": "/furniture/reproduction-furniture/seating/benches"
+      },
+      {
+       "label": "Beds",
+       "href": "/furniture/reproduction-furniture/beds"
+      },
+      {
+       "label": "Mirrors",
+       "href": "/furniture/reproduction-furniture/mirrors"
+      },
+      {
+       "label": "Tables",
+       "href": "/furniture/reproduction-furniture/tables"
+      },
+      {
+       "label": "The Pantry Collection",
+       "href": "/furniture/reproduction-furniture/the-pantry-collection"
+      }
+     ]
+    }
+   ],
+   [
+    {
+     "heading": "Antiques",
+     "headingHref": "/furniture/antiques",
+     "links": [
+      {
+       "label": "Seating",
+       "href": "/furniture/antiques/antique-seating"
+      },
+      {
+       "label": "Tables",
+       "href": "/furniture/antiques/antique-tables"
+      },
+      {
+       "label": "Desks",
+       "href": "/furniture/antiques/desks"
+      },
+      {
+       "label": "Bookcases & Cabinets",
+       "href": "/furniture/antiques/bookcases-and-cabinets"
+      },
+      {
+       "label": "Chests",
+       "href": "/furniture/antiques/chests"
+      },
+      {
+       "label": "Mirrors",
+       "href": "/furniture/antiques/antique-mirrors"
+      },
+      {
+       "label": "Objects",
+       "href": "/furniture/antiques/objects"
+      },
+      {
+       "label": "Works of Arts",
+       "href": "/furniture/antiques/works-of-art"
+      },
+      {
+       "label": "Carpets",
+       "href": "/furniture/antiques/antique-carpets"
+      },
+      {
+       "label": "Garden Statuary",
+       "href": "/furniture/antiques/garden-statuary"
+      },
+      {
+       "label": "View all Antiques",
+       "href": "/see-all/antiques"
+      }
+     ]
+    }
+   ],
+   [
+    {
+     "heading": "About",
+     "headingHref": "/about-jamb",
+     "links": [
+      {
+       "label": "Our Story",
+       "href": "/our-story"
+      },
+      {
+       "label": "Showrooms",
+       "href": "/showrooms"
+      },
+      {
+       "label": "Partners",
+       "href": "/our-partners"
+      },
+      {
+       "label": "Privacy Policy",
+       "href": "/privacy-notice"
+      },
+      {
+       "label": "Cookie Policy",
+       "href": "/cookie-policy"
+      },
+      {
+       "label": "Terms & Conditions",
+       "href": "/terms-and-conditions"
+      }
+     ]
+    },
+    {
+     "heading": "Journal",
+     "headingHref": "/journal",
+     "links": []
+    }
+   ]
+  ]
+ }
+}
