@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import {stegaClean} from 'next-sanity'
 import type {Settings} from '@/sanity/types-helpers'
 
 export function Logo({settings, className = 'h-[45px] max-md:h-9'}: {settings: Settings; className?: string}) {
   const logo = settings.logo
   return (
-    <Link href="/" aria-label={settings.siteTitle ?? 'Home'} className="block shrink-0">
+    <Link href="/" aria-label={stegaClean(settings.siteTitle) ?? 'Home'} className="block shrink-0">
       {logo?.asset?.url ? (
         // eslint-disable-next-line @next/next/no-img-element -- SVG logo from Sanity
         <img

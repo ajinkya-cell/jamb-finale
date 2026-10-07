@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import { draftMode } from "next/headers";
 import localFont from "next/font/local";
+import { VisualEditing } from "next-sanity/visual-editing";
 import { Footer } from "@/components/footer/Footer";
 import { Header } from "@/components/header/Header";
+import { ExitPreview } from "@/components/preview/ExitPreview";
+import { SanityLive } from "@/sanity/live";
 import "./globals.css";
 
 // Galaxie Copernicus Book, the typeface used across jamb.co.uk.
@@ -18,7 +22,9 @@ export const metadata: Metadata = {
   title: "Jamb",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const { isEnabled: isDraftMode } = await draftMode();
+
   return (
     <html lang="en" className={copernicus.variable}>
       <body className="font-serif antialiased">
@@ -33,6 +39,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <SanityLive includeDrafts={isDraftMode} />
+        {isDraftMode && (
+          <>
+            <VisualEditing />
+            <ExitPreview />
+          </>
+        )}
       </body>
     </html>
   );

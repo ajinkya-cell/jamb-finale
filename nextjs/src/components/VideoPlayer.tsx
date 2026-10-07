@@ -1,6 +1,7 @@
 'use client'
 
 import {useState} from 'react'
+import {stegaClean} from 'next-sanity'
 
 type Props = {videoId: string; title: string; poster: string; portrait: boolean}
 
@@ -27,7 +28,7 @@ export function VideoPlayer({videoId, title, poster, portrait}: Props) {
           type="button"
           onClick={() => setPlaying(true)}
           className="group absolute inset-0 h-full w-full cursor-pointer focus:outline-none"
-          aria-label={`Play video: ${title}`}
+          aria-label={`Play video: ${stegaClean(title)}`}
         >
           <div className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/30">
             <svg

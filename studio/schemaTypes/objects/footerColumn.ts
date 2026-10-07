@@ -17,14 +17,12 @@ export const footerColumnType = defineType({
     }),
   ],
   preview: {
-    select: {groups: 'groups'},
-    prepare({groups}) {
-      const headings = (groups ?? [])
-        .map((g: {heading?: string}) => g.heading)
-        .filter(Boolean)
+    select: {group0: 'groups.0.heading', group1: 'groups.1.heading', group2: 'groups.2.heading'},
+    prepare({group0, group1, group2}) {
+      const headings = [group0, group1, group2].filter(Boolean)
       return {
         title: headings.join(' + ') || 'Footer column',
-        subtitle: `${groups?.length ?? 0} groups`,
+        subtitle: 'Footer column',
         media: ThLargeIcon,
       }
     },

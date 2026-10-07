@@ -28,7 +28,7 @@ export type NavColumn = {
   _type: "navColumn";
   heading?: string;
   headingLink?: Link;
-  links: Array<
+  links?: Array<
     {
       _key: string;
     } & Cta
@@ -181,11 +181,6 @@ export type HeroSection = {
   _type: "heroSection";
   heading?: string;
   image: ImageWithAlt;
-  quickLinks?: Array<
-    {
-      _key: string;
-    } & Cta
-  >;
   tone?: "warm" | "grey" | "taupe";
 };
 
@@ -481,7 +476,7 @@ export type AllSanitySchemaTypes =
 
 // Source: ../nextjs/src/sanity/queries.ts
 // Variable: HOME_PAGE_QUERY
-// Query: *[_id == "homePage"][0]{    _id,    title,    pageBuilder[]{      _key,      _type,      tone,      _type == "heroSection" => {        heading,        image{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },        quickLinks[]{ _key, label, link{   "href": select(    linkType == "external" => externalUrl,    internalLink->{      "path": select(        _type == "homePage" => "/",        _type == "page" => "/" + slug.current,        _type == "category" => slug.current,        _type == "product" => category->slug.current + "/" + slug.current      )    }.path  ),  openInNewTab } }      },      _type == "featureSection" => {        eyebrow,        title,        body[]{   ...,  markDefs[]{ ..., _type == "link" => { _key, _type, link{   "href": select(    linkType == "external" => externalUrl,    internalLink->{      "path": select(        _type == "homePage" => "/",        _type == "page" => "/" + slug.current,        _type == "category" => slug.current,        _type == "product" => category->slug.current + "/" + slug.current      )    }.path  ),  openInNewTab } } } },        actions[]{ _key, label, link{   "href": select(    linkType == "external" => externalUrl,    internalLink->{      "path": select(        _type == "homePage" => "/",        _type == "page" => "/" + slug.current,        _type == "category" => slug.current,        _type == "product" => category->slug.current + "/" + slug.current      )    }.path  ),  openInNewTab } },        image{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },        imagePosition      },      _type == "productRail" => {        title,        "titleHref": titleLink->slug.current,        display,        "products": select(          source == "category" => *[_type == "product" && category._ref == ^.category._ref]            | order(publishedAt desc)[0...40]{   _id,  name,  "href": category->slug.current + "/" + slug.current,  "image": images[0]{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },  "category": category->{ name, "href": slug.current } },          products[]->{   _id,  name,  "href": category->slug.current + "/" + slug.current,  "image": images[0]{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },  "category": category->{ name, "href": slug.current } }        ),        limit,        source      },      _type == "videoSection" => {        title,        url,        poster{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot }      }    }  }
+// Query: *[_id == "homePage"][0]{    _id,    title,    pageBuilder[]{      _key,      _type,      tone,      _type == "heroSection" => {        heading,        image{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot }      },      _type == "featureSection" => {        eyebrow,        title,        body[]{   ...,  markDefs[]{ ..., _type == "link" => { _key, _type, link{   "href": select(    linkType == "external" => externalUrl,    internalLink->{      "path": select(        _type == "homePage" => "/",        _type == "page" => "/" + slug.current,        _type == "category" => slug.current,        _type == "product" => category->slug.current + "/" + slug.current      )    }.path  ),  openInNewTab } } } },        actions[]{ _key, label, link{   "href": select(    linkType == "external" => externalUrl,    internalLink->{      "path": select(        _type == "homePage" => "/",        _type == "page" => "/" + slug.current,        _type == "category" => slug.current,        _type == "product" => category->slug.current + "/" + slug.current      )    }.path  ),  openInNewTab } },        image{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },        imagePosition      },      _type == "productRail" => {        title,        "titleHref": titleLink->slug.current,        display,        "products": select(          source == "category" => *[_type == "product" && category._ref == ^.category._ref]            | order(publishedAt desc)[0...40]{   _id,  name,  "href": category->slug.current + "/" + slug.current,  "image": images[0]{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },  "category": category->{ name, "href": slug.current } },          products[]->{   _id,  name,  "href": category->slug.current + "/" + slug.current,  "image": images[0]{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot },  "category": category->{ name, "href": slug.current } }        ),        limit,        source      },      _type == "videoSection" => {        title,        url,        poster{   asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },  alt,  crop,  hotspot }      }    }  }
 export type HOME_PAGE_QUERY_RESULT =
   | {
       _id: "homePage";
@@ -563,14 +558,6 @@ export type HOME_PAGE_QUERY_RESULT =
               crop: SanityImageCrop | null;
               hotspot: SanityImageHotspot | null;
             };
-            quickLinks: Array<{
-              _key: string;
-              label: string;
-              link: {
-                href: string | null | "/";
-                openInNewTab: boolean | null;
-              };
-            }> | null;
           }
         | {
             _key: string;
@@ -724,14 +711,6 @@ export type HOME_PAGE_QUERY_RESULT =
               crop: SanityImageCrop | null;
               hotspot: SanityImageHotspot | null;
             };
-            quickLinks: Array<{
-              _key: string;
-              label: string;
-              link: {
-                href: string | null | "/";
-                openInNewTab: boolean | null;
-              };
-            }> | null;
           }
         | {
             _key: string;
@@ -878,7 +857,7 @@ export type SITE_QUERY_RESULT = {
                 href: string | null | "/";
                 openInNewTab: boolean | null;
               };
-            }>;
+            }> | null;
           }> | null;
         }> | null;
       }
@@ -931,7 +910,7 @@ export type SITE_QUERY_RESULT = {
                 href: string | null | "/";
                 openInNewTab: boolean | null;
               };
-            }>;
+            }> | null;
           }>;
         }> | null;
       }
@@ -941,7 +920,7 @@ export type SITE_QUERY_RESULT = {
 // Query TypeMap
 declare global {
   interface SanityQueries {
-    '\n  *[_id == "homePage"][0]{\n    _id,\n    title,\n    pageBuilder[]{\n      _key,\n      _type,\n      tone,\n      _type == "heroSection" => {\n        heading,\n        image{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n        quickLinks[]{ _key, label, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } }\n      },\n      _type == "featureSection" => {\n        eyebrow,\n        title,\n        body[]{ \n  ...,\n  markDefs[]{ ..., _type == "link" => { _key, _type, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } } }\n },\n        actions[]{ _key, label, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } },\n        image{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n        imagePosition\n      },\n      _type == "productRail" => {\n        title,\n        "titleHref": titleLink->slug.current,\n        display,\n        "products": select(\n          source == "category" => *[_type == "product" && category._ref == ^.category._ref]\n            | order(publishedAt desc)[0...40]{ \n  _id,\n  name,\n  "href": category->slug.current + "/" + slug.current,\n  "image": images[0]{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n  "category": category->{ name, "href": slug.current }\n },\n          products[]->{ \n  _id,\n  name,\n  "href": category->slug.current + "/" + slug.current,\n  "image": images[0]{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n  "category": category->{ name, "href": slug.current }\n }\n        ),\n        limit,\n        source\n      },\n      _type == "videoSection" => {\n        title,\n        url,\n        poster{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n }\n      }\n    }\n  }\n': HOME_PAGE_QUERY_RESULT;
+    '\n  *[_id == "homePage"][0]{\n    _id,\n    title,\n    pageBuilder[]{\n      _key,\n      _type,\n      tone,\n      _type == "heroSection" => {\n        heading,\n        image{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n }\n      },\n      _type == "featureSection" => {\n        eyebrow,\n        title,\n        body[]{ \n  ...,\n  markDefs[]{ ..., _type == "link" => { _key, _type, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } } }\n },\n        actions[]{ _key, label, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } },\n        image{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n        imagePosition\n      },\n      _type == "productRail" => {\n        title,\n        "titleHref": titleLink->slug.current,\n        display,\n        "products": select(\n          source == "category" => *[_type == "product" && category._ref == ^.category._ref]\n            | order(publishedAt desc)[0...40]{ \n  _id,\n  name,\n  "href": category->slug.current + "/" + slug.current,\n  "image": images[0]{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n  "category": category->{ name, "href": slug.current }\n },\n          products[]->{ \n  _id,\n  name,\n  "href": category->slug.current + "/" + slug.current,\n  "image": images[0]{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n },\n  "category": category->{ name, "href": slug.current }\n }\n        ),\n        limit,\n        source\n      },\n      _type == "videoSection" => {\n        title,\n        url,\n        poster{ \n  asset->{ _id, url, metadata{ lqip, dimensions{ width, height, aspectRatio } } },\n  alt,\n  crop,\n  hotspot\n }\n      }\n    }\n  }\n': HOME_PAGE_QUERY_RESULT;
     '\n  {\n    "home": *[_id == "homePage"][0]{ title, seo{ title, description, noIndex, image{ asset->{ url } } } },\n    "settings": *[_id == "settings"][0]{ siteTitle, siteDescription }\n  }{\n    "title": coalesce(home.seo.title, settings.siteTitle, home.title),\n    "description": coalesce(home.seo.description, settings.siteDescription),\n    "image": home.seo.image.asset.url,\n    "noIndex": home.seo.noIndex == true\n  }\n': HOME_SEO_QUERY_RESULT;
     '\n  {\n    "settings": *[_id == "settings"][0]{\n      siteTitle,\n      logo{ asset->{ _id, url, metadata{ dimensions{ width, height } } }, alt },\n      phone,\n      email,\n      address,\n      socialLinks[]{ _key, platform, url }\n    },\n    "navigation": *[_id == "navigation"][0]{\n      items[]{\n        _key,\n        label,\n        link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n },\n        columns[]{ \n  _key,\n  heading,\n  headingLink{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n },\n  links[]{ _key, label, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } }\n }\n      }\n    },\n    "footer": *[_id == "footer"][0]{\n      newsletter{ heading, body, buttonLabel, consent[]{ \n  ...,\n  markDefs[]{ ..., _type == "link" => { _key, _type, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } } }\n } },\n      columns[]{ _key, groups[]{ \n  _key,\n  heading,\n  headingLink{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n },\n  links[]{ _key, label, link{ \n  "href": select(\n    linkType == "external" => externalUrl,\n    internalLink->{\n      "path": select(\n        _type == "homePage" => "/",\n        _type == "page" => "/" + slug.current,\n        _type == "category" => slug.current,\n        _type == "product" => category->slug.current + "/" + slug.current\n      )\n    }.path\n  ),\n  openInNewTab\n } }\n } }\n    }\n  }\n': SITE_QUERY_RESULT;
   }

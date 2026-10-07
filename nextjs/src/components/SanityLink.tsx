@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {stegaClean} from 'next-sanity'
 import type {ComponentProps, ReactNode} from 'react'
 import type {LinkValue} from '@/sanity/types-helpers'
 
@@ -9,8 +10,9 @@ type Props = Omit<ComponentProps<'a'>, 'href'> & {
 
 /** Renders a resolved Sanity `link`: next/link internally, <a> for external URLs. */
 export function SanityLink({link, children, ...rest}: Props) {
-  const href = link?.href
-  if (!href) return <span className={rest.className}>{children}</span>
+  // Hrefs come from string fields, so strip any preview (stega) encoding first.
+  const href = stegaClean(link?.href)
+  if (!link || !href) return <span className={rest.className}>{children}</span>
 
   const newTab = link.openInNewTab ? {target: '_blank', rel: 'noopener noreferrer'} : {}
   if (/^(https?:|mailto:|tel:)/.test(href)) {

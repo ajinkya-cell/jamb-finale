@@ -1,6 +1,7 @@
 'use client'
 
 import {Fragment, useEffect, useRef, useState} from 'react'
+import {stegaClean} from 'next-sanity'
 import {SanityLink} from '../SanityLink'
 import type {NavColumn, NavItem} from '@/sanity/types-helpers'
 
@@ -111,7 +112,7 @@ export function DesktopNav({items, scrolled}: {items: NavItem[]; scrolled: boole
       {open?.columns?.length ? (
         <div
           role="menu"
-          aria-label={`${open.label} menu`}
+          aria-label={`${stegaClean(open.label)} menu`}
           onMouseEnter={() => show(open._key)}
           className={`fixed left-0 z-50 w-screen transition-all duration-300 ease-in-out ${
             scrolled ? 'top-[65px]' : 'top-[90px]'

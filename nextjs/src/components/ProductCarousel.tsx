@@ -2,6 +2,7 @@
 
 import {Children, useCallback, useEffect, useState, type ReactNode} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import {stegaClean} from 'next-sanity'
 import {ArrowLeft, ArrowRight} from 'lucide-react'
 
 type Props = {
@@ -43,7 +44,7 @@ export function ProductCarousel({children, columns, label}: Props) {
       className="relative w-full"
       role="region"
       aria-roledescription="carousel"
-      aria-label={label}
+      aria-label={stegaClean(label)}
       onKeyDown={(e) => {
         if (e.key === 'ArrowLeft') emblaApi?.scrollPrev()
         if (e.key === 'ArrowRight') emblaApi?.scrollNext()

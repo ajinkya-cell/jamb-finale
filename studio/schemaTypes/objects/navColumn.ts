@@ -23,16 +23,30 @@ export const navColumnType = defineType({
       name: 'links',
       type: 'array',
       of: [defineArrayMember({type: 'cta'})],
-      validation: (rule) => rule.required().min(1),
+      // A heading-only group is valid (e.g. "Journal" in the footer links straight to /journal).
+      validation: (rule) =>
+        rule.custom((links, context) => {
+          const heading = (context.parent as {heading?: string} | undefined)?.heading
+          return heading || (Array.isArray(links) && links.length > 0)
+            ? true
+            : 'Add a heading or at least one link'
+        }),
     }),
   ],
   preview: {
-    select: {heading: 'heading', links: 'links'},
-    prepare({heading, links}) {
-      const labels = (links ?? []).map((l: {label?: string}) => l.label).filter(Boolean)
+    select: {
+      heading: 'heading',
+      link0: 'links.0.label',
+      link1: 'links.1.label',
+      link2: 'links.2.label',
+      link3: 'links.3.label',
+    },
+    prepare({heading, link0, link1, link2, link3}) {
+      const labels = [link0, link1, link2].filter(Boolean)
+      const list = labels.length ? `${labels.join(', ')}${link3 ? '…' : ''}` : 'No links yet'
       return {
-        title: heading || labels.slice(0, 3).join(', ') || 'Untitled column',
-        subtitle: `${labels.length} links`,
+        title: heading || list,
+        subtitle: heading ? list : 'Link column',
         media: StackIcon,
       }
     },

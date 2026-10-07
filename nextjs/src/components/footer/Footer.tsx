@@ -1,12 +1,18 @@
-import type {PortableTextBlock} from 'next-sanity'
+import {stegaClean, type PortableTextBlock} from 'next-sanity'
 import {getSite} from '@/sanity/fetch'
+import type {DynamicFetchOptions} from '@/sanity/live'
+import {WithFetchOptions} from '@/sanity/WithFetchOptions'
 import {RichText} from '../RichText'
 import {SanityLink} from '../SanityLink'
 import {NewsletterForm} from './NewsletterForm'
 import {SocialIcon} from './SocialIcon'
 
-export async function Footer() {
-  const {settings, footer} = await getSite()
+export function Footer() {
+  return <WithFetchOptions>{(options) => <FooterContent options={options} />}</WithFetchOptions>
+}
+
+async function FooterContent({options}: {options: DynamicFetchOptions}) {
+  const {settings, footer} = await getSite(options)
 
   return (
     <footer className="w-full">
@@ -24,7 +30,7 @@ export async function Footer() {
               </div>
               <div className="text-base leading-6">
                 {settings?.email && (
-                  <a href={`mailto:${settings.email}`} className="mb-3 block transition-colors hover:text-slate">
+                  <a href={`mailto:${stegaClean(settings.email)}`} className="mb-3 block transition-colors hover:text-slate">
                     {settings.email}
                   </a>
                 )}
@@ -35,10 +41,10 @@ export async function Footer() {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={social.platform}
+                      aria-label={stegaClean(social.platform)}
                       className="capitalize transition-colors hover:text-black"
                     >
-                      <SocialIcon platform={social.platform} />
+                      <SocialIcon platform={stegaClean(social.platform)} />
                     </a>
                   ))}
                 </div>

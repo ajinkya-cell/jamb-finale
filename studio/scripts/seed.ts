@@ -285,7 +285,6 @@ function section(s: Section) {
         _type: 'heroSection',
         heading: 'Jamb: antique and reproduction fireplaces, lighting and furniture',
         image: imageField(s.image, 'A Jamb interior with an antique chimneypiece'),
-        quickLinks: s.links.map(cta),
         tone: s.tone,
       }
     case 'feature':

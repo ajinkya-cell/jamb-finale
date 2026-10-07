@@ -85,7 +85,7 @@
               }
             }
           },
-          "optional": false
+          "optional": true
         }
       }
     }
@@ -992,28 +992,6 @@
             "name": "imageWithAlt"
           },
           "optional": false
-        },
-        "quickLinks": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "array",
-            "of": {
-              "type": "object",
-              "attributes": {
-                "_key": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "string"
-                  }
-                }
-              },
-              "rest": {
-                "type": "inline",
-                "name": "cta"
-              }
-            }
-          },
-          "optional": true
         },
         "tone": {
           "type": "objectAttribute",

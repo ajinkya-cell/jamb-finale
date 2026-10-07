@@ -37,6 +37,20 @@ export const categoryType = defineType({
           params: {id: document._id.replace(/^drafts\./, '')},
         }),
       },
+      validation: (rule) =>
+        rule.custom(async (parent, context) => {
+          // Walk up the tree: a category can't sit inside one of its own descendants.
+          const selfId = context.document?._id.replace(/^drafts\./, '')
+          const client = context.getClient({apiVersion: API_VERSION})
+          let ref = (parent as {_ref?: string} | undefined)?._ref
+          for (let depth = 0; ref && depth < 20; depth++) {
+            if (ref === selfId) return 'A category cannot be placed inside one of its own subcategories'
+            ref =
+              (await client.fetch<string | null>('*[_id == $id][0].parent._ref', {id: ref})) ??
+              undefined
+          }
+          return true
+        }),
     }),
     defineField({
       name: 'slug',

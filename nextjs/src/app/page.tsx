@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PageBuilder } from "@/components/PageBuilder";
 import { getHomePage, getHomeSeo } from "@/sanity/fetch";
+import type { DynamicFetchOptions } from "@/sanity/live";
+import { WithFetchOptions } from "@/sanity/WithFetchOptions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seo = await getHomeSeo();
@@ -13,8 +15,12 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function HomePage() {
-  const page = await getHomePage();
+export default function HomePage() {
+  return <WithFetchOptions>{(options) => <Home options={options} />}</WithFetchOptions>;
+}
+
+async function Home({ options }: { options: DynamicFetchOptions }) {
+  const page = await getHomePage(options);
   if (!page) notFound();
 
   return (

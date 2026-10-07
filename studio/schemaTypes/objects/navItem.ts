@@ -27,12 +27,11 @@ export const navItemType = defineType({
     }),
   ],
   preview: {
-    select: {title: 'label', columns: 'columns'},
-    prepare({title, columns}) {
-      const count = columns?.length ?? 0
+    select: {title: 'label', firstColumn: 'columns.0._key', firstLink: 'columns.0.links.0.label'},
+    prepare({title, firstColumn, firstLink}) {
       return {
         title: title || 'Untitled',
-        subtitle: count ? `Menu · ${count} columns` : 'Link',
+        subtitle: firstColumn ? `Menu · ${firstLink ?? 'empty'}…` : 'Link',
         media: MenuIcon,
       }
     },

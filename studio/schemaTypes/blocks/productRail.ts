@@ -4,6 +4,11 @@ import {toneField} from '../shared/toneField'
 
 type RailParent = {source?: string} | undefined
 
+const MAX_PRODUCTS = 40
+const PRODUCT_SLOTS = Object.fromEntries(
+  Array.from({length: MAX_PRODUCTS}, (_, i) => [`slot${i}`, `products.${i}._key`]),
+)
+
 /** A row of product cards, hand-picked or pulled automatically from a category. */
 export const productRailType = defineType({
   name: 'productRail',
@@ -42,13 +47,18 @@ export const productRailType = defineType({
       type: 'array',
       of: [defineArrayMember({type: 'reference', to: [{type: 'product'}]})],
       hidden: ({parent}) => parent?.source !== 'manual',
-      validation: (rule) =>
-        rule.unique().custom((value, context) => {
+      validation: (rule) => [
+        rule.unique(),
+        rule.custom((value, context) => {
           if ((context.parent as RailParent)?.source === 'manual' && !value?.length) {
             return 'Add at least one product'
           }
           return true
         }),
+        rule
+          .max(MAX_PRODUCTS)
+          .warning('Rails with more than 40 products get slow to browse; consider a category rail'),
+      ],
     }),
     defineField({
       name: 'category',
@@ -92,15 +102,22 @@ export const productRailType = defineType({
     select: {
       title: 'title',
       source: 'source',
-      products: 'products',
       categoryName: 'category.name',
       media: 'products.0.images.0',
+      // Sanity advises selecting individual items rather than whole arrays.
+      // Each slot's `_key` lives on the array item itself, so it is read
+      // without resolving the reference, giving an exact count up to the
+      // 40-product guideline enforced above.
+      ...PRODUCT_SLOTS,
     },
-    prepare({title, source, products, categoryName, media}) {
+    prepare({title, source, categoryName, media, ...slots}) {
+      const count = Object.values(slots).filter(Boolean).length
       const detail =
         source === 'category'
           ? `latest from ${categoryName ?? '…'}`
-          : `${products?.length ?? 0} products`
+          : count >= MAX_PRODUCTS
+            ? `${MAX_PRODUCTS}+ products`
+            : `${count} ${count === 1 ? 'product' : 'products'}`
       return {
         title: title || 'Untitled rail',
         subtitle: `Product rail · ${detail}`,

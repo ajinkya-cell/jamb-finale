@@ -55,8 +55,7 @@ export const HOME_PAGE_QUERY = defineQuery(/* groq */ `
       tone,
       _type == "heroSection" => {
         heading,
-        image{ ${imageFields} },
-        quickLinks[]{ ${ctaFields} }
+        image{ ${imageFields} }
       },
       _type == "featureSection" => {
         eyebrow,

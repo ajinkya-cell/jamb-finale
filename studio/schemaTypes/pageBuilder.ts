@@ -19,7 +19,11 @@ export const pageBuilderType = defineType({
         {name: 'commerce', title: 'Commerce', of: ['productRail']},
         {name: 'media', title: 'Media', of: ['videoSection']},
       ],
-      views: [{name: 'list'}],
+      // Grid view shows a screenshot of each block (studio/static/block-previews).
+      views: [
+        {name: 'grid', previewImageUrl: (schemaTypeName) => `/static/block-previews/${schemaTypeName}.jpg`},
+        {name: 'list'},
+      ],
     },
   },
 })
